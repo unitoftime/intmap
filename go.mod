@@ -1,3 +1,3 @@
-module github.com/kamstrup/intmap
+module github.com/unitoftime/intmap
 
 go 1.18

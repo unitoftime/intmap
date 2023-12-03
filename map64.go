@@ -18,7 +18,8 @@ type pair[K IntKey, V any] struct {
 const fillFactor64 = 0.7
 
 func phiMix64(x int) int {
-	h := x * 0x9E3779B9
+	// h := x * 0x9E3779B9
+	h := x * (-1_640_531_527) // This is just the int32 version of the 0x9E3779B9
 	return h ^ (h >> 16)
 }
 
